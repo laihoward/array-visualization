@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>array visualization</title>
+  </head>
+  <body>
+      <div id="Container">
+        <div id="header">
+            <h1>Array Implementation</h1>
+        </div>
+        <div>
+            <h3>push number between 0 to 99</h3>
+        </div>
+        <div id="ControlButton">
+            <table id="ControlButtonTable">
+                <td>
+                    <input type="Text" value size="6" id="pushdata" class="pushvalue"/>
+                </td>
+                <td>
+                    <input type="button" value="Push" class="pushbutton" onclick="PushDataInRect();"/>
+                </td>
+                <td>
+                    <input type="button" value="Clear"class="clearbutton" onclick="clearArray();"/>
+                </td>
+                <td>
+                    <input type="button" value="sorting"class="sortingbutton" onclick="bubblesorting()"/>
+                </td>
+            </table>
+        </div> 
+        <div class="result">
+            <p class="ArrayNumber"></p>
+            <p class="ArraySize"></p>
+            <p class="Warning"></p>
+        </div>   
+        <canvas id="canvas" width="1000" height="500"> ==$0
+      </div>
+
+  </body>
+  <script type="text/javascript" src="component/pushdata.js"></script> 
+  <script type="text/javascript" src="component/plotrect.js"></script>
+  
+</html>
